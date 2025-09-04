@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ashu501/Git-example.git'
+                git branch: 'main', url: 'https://github.com/pallavikalwa/example-git.git'
             }
         }
 
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     mkdir -p deployed_html
-                    cp form.html deployed_html/
+                    cp crf.html deployed_html/
                 '''
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                 allowMissing: false,
                 keepAll: true,
                 reportDir: 'deployed_html',
-                reportFiles: 'form.html',
+                reportFiles: 'crf.html',
                 reportName: 'My Webpage'
             ])
         }
