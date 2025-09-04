@@ -1,0 +1,22 @@
+pipline
+{
+agent any
+stages
+{
+stage('CheckOut')
+{
+steps
+{
+git branch:'main',url:https://github.com/example-git/examplegit.git'
+}
+}
+stage('Deploy')
+{
+steps
+{
+sh'''
+mkdir-p deployed-html
+cp*html deployed_html
+'''
+}
+}
