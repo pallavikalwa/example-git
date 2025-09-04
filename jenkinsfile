@@ -20,3 +20,18 @@ cp*html deployed_html
 '''
 }
 }
+}
+post
+{
+success
+{
+publishHTML(target: [
+allowMissing: false,
+keepAll: true,
+reportDir:'deployed_html',
+reportFiles:'form.html',
+reportName: 'My Webpage'
+])
+}
+}
+}
