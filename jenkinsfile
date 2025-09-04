@@ -7,7 +7,7 @@ stage('CheckOut')
 {
 steps
 {
-git branch:'main',url:https://github.com/example-git/examplegit.git'
+git branch:'main',url:https://github.com/pallavikalwa/example-git.git'
 }
 }
 stage('Deploy')
@@ -29,7 +29,7 @@ publishHTML(target: [
 allowMissing: false,
 keepAll: true,
 reportDir:'deployed_html',
-reportFiles:'form.html',
+reportFiles:'crf.html',
 reportName: 'My Webpage'
 ])
 }
