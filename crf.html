@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Registration Form</title>
+</head>
+<body>
+  <h2>Course Registration Form</h2>
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label><br />
+    <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" id="phone" name="phone" /><br /><br />
+
+    <label for="course">Select Course:</label><br />
+    <select id="course" name="course" required>
+      <option value="">--Please choose an option--</option>
+      <option value="html">HTML Basics</option>
+      <option value="css">CSS Fundamentals</option>
+      <option value="js">JavaScript Essentials</option>
+      <option value="python">Python for Beginners</option>
+    </select><br /><br />
+
+    <label>Preferred Schedule:</label><br />
+    <input type="radio" id="morning" name="schedule" value="morning" />
+    <label for="morning">Morning</label><br />
+    <input type="radio" id="afternoon" name="schedule" value="afternoon" />
+    <label for="afternoon">Afternoon</label><br />
+    <input type="radio" id="evening" name="schedule" value="evening" />
+    <label for="evening">Evening</label><br /><br />
+
+    <label for="comments">Additional Comments:</label><br />
+    <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br /><br />
+
+    <input type="submit" value="Register" />
+  </form>
+</body>
+</html>
